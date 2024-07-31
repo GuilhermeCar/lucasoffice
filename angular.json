@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:application",
           "options": {
-            "outputPath": "dist/",
+            "outputPath": "docs/",
             "index": "src/index.html",
             "browser": "src/main.ts",
             "polyfills": [
@@ -25,8 +25,11 @@
                 "glob": "**/*",
                 "input": "public"
               },
-              "src/assets",
-              "src/assets/images"
+              {
+                "glob": "**/*",
+                "input": "src/app/error/images",
+                "output": "/assets/error/images"
+              }
             ],
             "styles": [
               "src/custom-theme.scss",

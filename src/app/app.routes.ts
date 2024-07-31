@@ -13,6 +13,7 @@ export const routes: Routes = [
     },
     {
         path: 'error',
+        pathMatch: 'full',
         component: ErrorComponent,
         data: {
             message: 'ESTAMOS FORA DO AR, JÁ ESTAREMOS DE VOLTA',
