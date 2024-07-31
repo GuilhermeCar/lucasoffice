@@ -1,2 +1,5 @@
-<p>error works 4!</p>
-<img src="404.svg" style="width: 100%" />
+<div class="error-container">
+    <img class="error-image" src="assets/images/404.svg"/>
+    <h3 class="error-message">{{message}}</h3>
+    <button mat-stroked-button (click)="buttonClicked()">{{buttonMessage}}</button>
+</div>
